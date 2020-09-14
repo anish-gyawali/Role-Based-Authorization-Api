@@ -154,7 +154,7 @@ namespace AntsyProject_285
 
         private static async Task CreateUser(UserManager<User> userManager, string username, string role)
         {
-            const string passwordForEveryone = "JustinIsAwesome123!";
+            const string passwordForEveryone = "Enter Secret password";
             var user = new User { UserName = username };
             await userManager.CreateAsync(user, passwordForEveryone);
             await userManager.AddToRoleAsync(user, role);
